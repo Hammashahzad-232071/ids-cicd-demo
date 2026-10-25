@@ -1,0 +1,47 @@
+@if (isStaticHost) {
+  <div class="banner">Static GitHub Pages Demonstration - Local Flask backend required for live inference.</div>
+}
+
+<main>
+  <h1>Network Intrusion Detector</h1>
+  <p class="sub">CICIDS-2017 (Wednesday) &middot; Random Forest on 22 Information-Gain features</p>
+
+  <section class="card">
+    <div class="row">
+      <span>Load sample:</span>
+      @for (s of sampleNames; track s) {
+        <button type="button" class="ghost" (click)="loadSample(s)">{{ s }}</button>
+      }
+    </div>
+
+    <div class="grid">
+      @for (f of features; track f) {
+        <label>
+          <span>{{ f }}</span>
+          <input type="number" step="any" [name]="f" [(ngModel)]="values[f]" />
+        </label>
+      }
+    </div>
+
+    <button type="button" class="primary" (click)="predict()" [disabled]="loading()">
+      {{ loading() ? 'Analyzing...' : 'Predict' }}
+    </button>
+  </section>
+
+  <section class="card result">
+    <h2>Result</h2>
+    @if (result(); as r) {
+      <p class="verdict" [class.attack]="r.is_attack">
+        {{ r.is_attack ? 'ATTACK: ' : 'NORMAL: ' }}{{ r.prediction }}
+        <small>({{ r.confidence * 100 | number: '1.0-1' }}% confidence)</small>
+      </p>
+      @for (p of probs(); track p[0]) {
+        <div class="bar"><span>{{ p[0] }}</span><i [style.width.%]="p[1] * 100"></i><b>{{ p[1] }}</b></div>
+      }
+    } @else if (message()) {
+      <p class="warn">{{ message() }}</p>
+    } @else {
+      <p class="muted">Fill the form (or load a sample) and press Predict.</p>
+    }
+  </section>
+</main>

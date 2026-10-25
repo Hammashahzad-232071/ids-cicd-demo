@@ -1,0 +1,17 @@
+:host { display:block; font-family: system-ui, sans-serif; color:#1b2333; background:#f3f5f9; min-height:100vh; }
+.banner { background:#fff3cd; color:#664d03; padding:10px 16px; text-align:center; font-weight:600; }
+main { max-width:1000px; margin:0 auto; padding:24px 16px; }
+h1 { margin:0; } .sub { color:#5b6577; margin:4px 0 20px; }
+.card { background:#fff; border-radius:12px; padding:20px; margin-bottom:20px; box-shadow:0 1px 4px rgba(0,0,0,.08); }
+.row { display:flex; gap:8px; align-items:center; margin-bottom:16px; flex-wrap:wrap; }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:12px; margin-bottom:16px; }
+label span { display:block; font-size:12px; color:#5b6577; margin-bottom:2px; }
+input { width:100%; box-sizing:border-box; padding:6px 8px; border:1px solid #cbd2de; border-radius:6px; }
+button { cursor:pointer; border-radius:8px; padding:8px 16px; border:1px solid #2f5bea; }
+.primary { background:#2f5bea; color:#fff; } .primary:disabled { opacity:.6; }
+.ghost { background:#fff; color:#2f5bea; }
+.verdict { font-size:22px; font-weight:700; color:#1a7f37; } .verdict.attack { color:#cf222e; }
+.verdict small { font-weight:400; color:#5b6577; font-size:14px; }
+.warn { color:#9a6700; } .muted { color:#8792a5; }
+.bar { display:grid; grid-template-columns:140px 1fr 50px; gap:8px; align-items:center; margin:4px 0; font-size:13px; }
+.bar i { display:block; height:8px; background:#2f5bea; border-radius:4px; }

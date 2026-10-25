@@ -1,0 +1,7 @@
+.venv/
+frontend/node_modules/
+frontend/dist/
+__pycache__/
+.angular/
+*.pyc
+data/Wednesday-workingHours_pcap_ISCX.csv

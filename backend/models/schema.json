@@ -1,0 +1,124 @@
+{
+  "features": [
+    "Packet Length Std",
+    "Total Length of Bwd Packets",
+    "Subflow Bwd Bytes",
+    "Destination Port",
+    "Packet Length Variance",
+    "Bwd Packet Length Mean",
+    "Avg Bwd Segment Size",
+    "Bwd Packet Length Max",
+    "Init_Win_bytes_backward",
+    "Total Length of Fwd Packets",
+    "Subflow Fwd Bytes",
+    "Init_Win_bytes_forward",
+    "Average Packet Size",
+    "Packet Length Mean",
+    "Max Packet Length",
+    "Fwd Packet Length Max",
+    "Flow IAT Max",
+    "Bwd Header Length",
+    "Flow Duration",
+    "Fwd IAT Max",
+    "Fwd Header Length",
+    "Fwd IAT Total"
+  ],
+  "classes": [
+    "BENIGN",
+    "DoS GoldenEye",
+    "DoS Hulk",
+    "DoS Slowhttptest",
+    "DoS slowloris",
+    "Heartbleed"
+  ],
+  "ranges": {
+    "Packet Length Std": [
+      0.0,
+      4362.400633
+    ],
+    "Total Length of Bwd Packets": [
+      0.0,
+      454000000.0
+    ],
+    "Subflow Bwd Bytes": [
+      0.0,
+      453688028.0
+    ],
+    "Destination Port": [
+      0.0,
+      65417.0
+    ],
+    "Packet Length Variance": [
+      0.0,
+      19000000.0
+    ],
+    "Bwd Packet Length Mean": [
+      0.0,
+      4370.686524
+    ],
+    "Avg Bwd Segment Size": [
+      0.0,
+      4370.686524
+    ],
+    "Bwd Packet Length Max": [
+      0.0,
+      17376.0
+    ],
+    "Init_Win_bytes_backward": [
+      -1.0,
+      65535.0
+    ],
+    "Total Length of Fwd Packets": [
+      0.0,
+      953476.0
+    ],
+    "Subflow Fwd Bytes": [
+      0.0,
+      953476.0
+    ],
+    "Init_Win_bytes_forward": [
+      -1.0,
+      65535.0
+    ],
+    "Average Packet Size": [
+      0.0,
+      2299.929204
+    ],
+    "Packet Length Mean": [
+      0.0,
+      2279.754386
+    ],
+    "Max Packet Length": [
+      0.0,
+      23360.0
+    ],
+    "Fwd Packet Length Max": [
+      0.0,
+      23360.0
+    ],
+    "Flow IAT Max": [
+      -1.0,
+      120000000.0
+    ],
+    "Bwd Header Length": [
+      0.0,
+      4147920.0
+    ],
+    "Flow Duration": [
+      -1.0,
+      119999992.0
+    ],
+    "Fwd IAT Max": [
+      0.0,
+      120000000.0
+    ],
+    "Fwd Header Length": [
+      0.0,
+      3297240.0
+    ],
+    "Fwd IAT Total": [
+      0.0,
+      120000000.0
+    ]
+  }
+}
